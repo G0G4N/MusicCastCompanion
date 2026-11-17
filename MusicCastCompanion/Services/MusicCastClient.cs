@@ -37,5 +37,17 @@ namespace MusicCastCompanion.Services
             await _client.GetAsync(
                 $"{_baseUrl}/main/setPower?power=standby");
         }
+
+        public async Task PowerOnZone2()
+        {
+            await _client.GetAsync(
+                $"{_baseUrl}/zone2/setPower?power=on");
+        }
+
+        public async Task PowerOffZone2()
+        {
+            await _client.GetAsync(
+                $"{_baseUrl}/zone2/setPower?power=standby");
+        }
     }
 }

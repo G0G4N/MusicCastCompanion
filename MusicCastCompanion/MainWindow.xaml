@@ -27,19 +27,41 @@
                 Height="40"
                 Margin="0,0,0,10"
                 Click="Connect_Click"/>
-            <Button
-                Content="Power On"
-                Width="150"
-                Height="40"
-                Margin="0,0,0,10"
-                Click="PowerOn_Click"/>
-            <Button
-                Content="Power Off"
-                Width="150"
-                Height="40"
-                Margin="0,0,0,10"
-                Click="PowerOff_Click"/>
 
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <StackPanel>
+                    <TextBlock
+                        Text="Zone 1" HorizontalAlignment="Center"/>
+                <Button
+                        Content="Power On"
+                        Width="150"
+                        Height="40"
+                        Margin="0,0,0,10"
+                        Click="PowerOn_Click"/>
+                <Button
+                        Content="Power Off"
+                        Width="150"
+                        Height="40"
+                        Margin="0,0,0,10"
+                        Click="PowerOff_Click"/>
+            </StackPanel>
+            <StackPanel Margin="20,0,0,0">
+                    <TextBlock
+                        Text="Zone 2" HorizontalAlignment="Center"/>
+                    <Button
+                        Content="Power On"
+                        Width="150"
+                        Height="40"
+                        Margin="0,0,0,10"
+                        Click="PowerOnZone2_Click"/>
+                <Button
+                        Content="Power Off"
+                        Width="150"
+                        Height="40"
+                        Margin="0,0,0,10"
+                        Click="PowerOffZone2_Click"/>
+            </StackPanel>
+        </StackPanel>
         </StackPanel>
     </Grid>
 </Window>

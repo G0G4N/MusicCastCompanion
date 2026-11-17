@@ -60,5 +60,35 @@ namespace MusicCastCompanion
 
             MessageBox.Show("Power command sent!");
         }
+
+        private async void PowerOnZone2_Click(
+            object sender,
+            RoutedEventArgs e)
+        {
+            if (receiver == null)
+            {
+                MessageBox.Show("Please connect to a receiver first.");
+                return;
+            }
+
+            await receiver.PowerOnZone2();
+
+            MessageBox.Show("Zone 2 power command sent!");
+        }
+
+        private async void PowerOffZone2_Click(
+            object sender,
+            RoutedEventArgs e)
+        {
+            if (receiver == null)
+            {
+                MessageBox.Show("Please connect to a receiver first.");
+                return;
+            }
+
+            await receiver.PowerOffZone2();
+
+            MessageBox.Show("Zone 2 power command sent!");
+        }
     }
 }
