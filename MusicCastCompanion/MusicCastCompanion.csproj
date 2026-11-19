@@ -6,6 +6,10 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <AssemblyName>YamahaReceiverCompanion</AssemblyName>
+    <RootNamespace>MusicCastCompanion</RootNamespace>
+    <Product>Yamaha Receiver Companion</Product>
+    <Title>Yamaha Receiver Companion</Title>
   </PropertyGroup>
 
 </Project>
